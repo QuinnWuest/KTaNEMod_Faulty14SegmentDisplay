@@ -475,6 +475,8 @@ public class Faulty14SegmentDisplayScript : MonoBehaviour
 
             if (cmd is TpSubmit)
             {
+                yield return "solve";
+                yield return "strike";
                 SubmitSel.OnInteract();
                 yield return new WaitForSeconds(0.1f);
                 continue;
